@@ -20,4 +20,7 @@ def get(url, dir=os.path.join(fileloc, "fromURL"),
         fl.write(data)
 
 if __name__ == "__main__":
-    get(input("Url of a pdf: "))
+    ext = input("File extension: ")
+    link = input("URL: ")
+    filename = input("Filename: ")
+    get(link, filename=filename, ext=ext)
